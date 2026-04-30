@@ -1165,3 +1165,59 @@ footer {
     max-height: 240px;
   }
 }
+
+
+/* Final override for Research Page mobile */
+@media (max-width: 900px) {
+  .research-page .research-item,
+  .research-page .research-item * {
+    max-width: 100%;
+  }
+
+  .research-page .research-item-grid,
+  .research-page .research-item-grid.reverse,
+  .research-page .research-item-grid.stacked {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .research-page .research-image {
+    width: 100% !important;
+  }
+
+  .research-page .research-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+
+  .research-page .research-text,
+  .research-page .research-item-grid.stacked .research-text,
+  .research-page .research-transport .research-text {
+    width: 100% !important;
+    max-width: none !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+
+  .research-page .research-text p,
+  .research-page .research-text div,
+  .research-page .research-text span,
+  .research-page .research-text li,
+  .research-page .research-item-grid.stacked .research-text p,
+  .research-page .research-transport .research-text p {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    text-align: left !important;
+  }
+
+  .research-page .research-text p {
+    margin: 0 0 18px !important;
+  }
+
+  .research-page .research-text p:last-child {
+    margin-bottom: 0 !important;
+  }
+}
