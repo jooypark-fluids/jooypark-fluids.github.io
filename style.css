@@ -360,25 +360,6 @@ footer {
     gap: 10px;
   }
 
-  .site-logo {
-    display: none;
-  }
-
-  body.home-page .site-logo {
-    position: static;
-    transform: none;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4px;
-    pointer-events: none;
-  }
-
-  body.home-page .site-logo img {
-    width: 72px;
-    height: 72px;
-  }
-
   .navbar a {
     font-size: 16px;
     padding: 8px 12px;
@@ -1184,4 +1165,27 @@ footer {
   height: 90px;
   object-fit: contain;
   display: block;
+}
+
+/* ---------- Mobile navbar symbol control ---------- */
+
+@media (max-width: 900px) {
+  .site-logo {
+    display: none;
+  }
+
+  body.home-page .site-logo {
+    position: static;
+    transform: none;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+    pointer-events: none;
+  }
+
+  body.home-page .site-logo img {
+    width: 72px;
+    height: 72px;
+  }
 }
