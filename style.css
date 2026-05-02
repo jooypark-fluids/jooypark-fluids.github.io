@@ -117,8 +117,7 @@ img {
 
 .intro-image img {
   width: 100%;
-  max-width: 485px;
-  max-height: 520px;
+  max-width: 560px;
   height: auto;
   object-fit: contain;
 }
@@ -342,8 +341,6 @@ img {
   color: #444;
 }
 
-
-
 /* Footer */
 
 footer {
@@ -492,7 +489,6 @@ footer {
   .reference-card p {
     font-size: 16px;
   }
-
 }
 
 /* Research Page */
@@ -525,6 +521,7 @@ footer {
 }
 
 /* Desktop layout */
+
 .research-item-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -537,6 +534,7 @@ footer {
 }
 
 /* First item uses one-column image/text layout on desktop */
+
 .research-item-grid.stacked {
   grid-template-columns: 1fr;
   gap: 22px;
@@ -585,6 +583,7 @@ footer {
 }
 
 /* First research item: keep same font size as others, only allow multiple paragraphs */
+
 .research-transport .research-text {
   display: block;
   width: 100%;
@@ -597,6 +596,7 @@ footer {
 }
 
 /* Research Page - Mobile */
+
 @media (max-width: 900px) {
   .research-hero {
     padding: 10px 0 10px;
@@ -623,6 +623,7 @@ footer {
   }
 
   /* Mobile: always image first, text second */
+
   .research-item-grid .research-image,
   .research-item-grid.reverse .research-image,
   .research-item-grid.stacked .research-image {
@@ -677,6 +678,7 @@ footer {
   color: var(--accent);
   font-weight: 700;
 }
+
 /* Publications Page */
 
 .publication-page {
@@ -868,7 +870,6 @@ footer {
 }
 
 @media (max-width: 900px) {
-
   .publication-search {
     grid-template-columns: 1fr;
     gap: 14px;
