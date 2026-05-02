@@ -43,8 +43,10 @@ img {
   padding: 28px 32px 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+  position: relative;
 }
 
 .navbar a {
@@ -356,6 +358,25 @@ footer {
 @media (max-width: 900px) {
   .navbar {
     gap: 10px;
+  }
+
+  .site-logo {
+    display: none;
+  }
+
+  body.home-page .site-logo {
+    position: static;
+    transform: none;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+    pointer-events: none;
+  }
+
+  body.home-page .site-logo img {
+    width: 72px;
+    height: 72px;
   }
 
   .navbar a {
@@ -1139,4 +1160,28 @@ footer {
     height: auto;
     max-height: 240px;
   }
+}
+
+/* ---------- Navbar site symbol ---------- */
+
+.site-logo {
+  position: absolute;
+  left: 100px;
+  top: 65%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.site-logo img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
 }
