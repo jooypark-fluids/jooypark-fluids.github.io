@@ -38,14 +38,18 @@
 
     <section class="news-list" aria-label="News updates">
 
-      <article class="news-item has-left-image">
-        <img class="news-left-image" src="../images/news/talk-photo.jpg" alt="Symposium Talk">
+      <!-- [경우 1] 오른쪽에 사진을 넣고 싶을 때 -->
+      <!-- class에 'has-right-image'를 추가하고, 내부 맨 아래에 <img> 태그를 넣습니다. -->
+      <article class="news-item has-right-image">
         <div class="news-content">
           <h2>May 2026</h2>
           <p>Jooyeon had a talk in "2026 CEAFM-Burgers-GWU Research Symposium" at Johns Hopkins University.</p>
         </div>
+        <img class="news-right-image" src="../images/news/talk-photo.jpg" alt="Symposium Talk">
       </article>
       
+      <!-- [경우 2] 사진 없이 글자만 넣고 싶을 때 (안넣을 때는 그냥 배경이 보임) -->
+      <!-- 기존 코드 그대로 작성하시면 됩니다. -->
       <article class="news-item">
         <div class="news-content">
           <h2>April 2026</h2>
@@ -66,3 +70,7 @@
 
   <footer>
     <p>© 2026 Jooyeon Park</p>
+  </footer>
+
+</body>
+</html>
