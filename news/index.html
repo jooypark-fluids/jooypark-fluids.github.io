@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="icon" type="image/png" href="/favicon.png">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,15 +11,83 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="icon" type="image/png" href="../favicon.png?v=2">
   <link rel="stylesheet" href="../style.css" />
+
+  <style>
+
+    /* YouTube video */
+    .youtube-video {
+      width: 100%;
+      max-width: 700px;
+      aspect-ratio: 16 / 9;
+      margin-top: 20px;
+    }
+
+    .youtube-video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+
+
+    /* Horizontal image gallery */
+    .news-gallery {
+      display: flex;
+      gap: 16px;
+
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      margin-top: 20px;
+      padding-bottom: 8px;
+
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .news-gallery img {
+      flex: 0 0 70%;
+      max-width: 600px;
+      height: 320px;
+
+      object-fit: cover;
+      border-radius: 8px;
+
+      scroll-snap-align: start;
+    }
+
+
+    /* Mobile */
+    @media (max-width: 700px) {
+
+      .news-gallery img {
+        flex: 0 0 85%;
+        height: 250px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
+
   <nav class="navbar">
+
     <div class="site-logo" href="./" aria-label="Home">
       <img src="../images/favicon2.png" alt="">
     </div>
@@ -28,90 +98,304 @@
     <a href="../equipment/index.html">Experimental Skills</a>
     <a href="../photos/index.html">Photos</a>
     <a class="active" href="./">News</a>
+
   </nav>
 
+
+
   <main class="page news-page">
+
 
     <section class="intro-section research-hero">
       <h1 class="page-title">News</h1>
     </section>
 
+
+
     <section class="news-list" aria-label="News updates">
 
 
+      <!-- ====================================================== -->
+      <!-- NOVEMBER 2026: MILTON VAN DYKE VIDEO AWARD -->
+      <!-- ====================================================== -->
+
       <article class="news-item">
+
         <div class="news-content">
-          <h2>September 2026</h2>
+
+          <h2>November 2026</h2>
+
           <p>
-          I uploaded a movie of “Aggregate Dislodgement and Fragmentation” on YouTube.
-          <a href="https://youtu.be/NffZWU3ynrU?si=vMZIilUE8ECxPVfQ" target="_blank" rel="noopener noreferrer">
-          Check it out!
-          </a>
-        </p>
+            Our video, <strong>“Held by Water, Broken by Wind,”</strong> received the
+            <strong>Milton van Dyke Video Award</strong> at the
+            <strong>Gallery of Fluid Motion, APS DFD 2026</strong>.
+            The video visualizes the dislodging and fragmentation dynamics of wet granular aggregates under turbulent jet flows.
+            </p>
+
+
+          <!-- YouTube video -->
+
+          <div class="youtube-video">
+
+            <iframe
+              src="https://www.youtube.com/watch?v=0qE3IOlpmqY"
+              title="Held by Water, Broken by Wind"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+
+          </div>
+
+
+          <!-- Award photo gallery -->
+
+          <div class="news-gallery">
+
+            <img
+              src="../images/news/image1_gfm.jpg"
+              alt="Milton van Dyke Video Award at APS DFD 2026"
+            >
+
+            <img
+              src="../images/news/image2_gfm.jpg"
+              alt="ceremony1"
+            >
+
+            <img
+              src="../images/news/image3_gfm.jpg"
+              alt="ceremony2"
+            >
+
+          </div>
+
         </div>
-    </article>
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- NOVEMBER 2026: APS DFD PRESENTATION -->
+      <!-- ====================================================== -->
 
       <article class="news-item has-right-image">
-  <div class="news-content">
-    <h2>July 2026</h2>
-    <p>
-      Our manuscript, “Impact of viscoelastic polymer solution droplets on a granular bed,” 
-      has been accepted and published. This paper was also featured on the Front Cover!
-    </p>
-  </div>
 
-  <img class="news-right-image"
-       src="../images/news/2026JulySoftMatterCover.png"
-       alt="Soft Matter Front Cover">
-</article> 
-      
-      <article class="news-item">
         <div class="news-content">
+
+          <h2>November 2026</h2>
+
+          <p>
+            Jooyeon Park presented “Dislodged or Fragmented? Wet Granular Aggregates under a Turbulent Jet” at APS DFD 2026.
+            She also enjoyed networking with fellow researchers and served as the session chair for the “Granular Flows: General” session.
+          </p>
+
+        </div>
+
+
+        <img
+          class="news-right-image"
+          src="../images/news/aps_present.png"
+          alt="Jooyeon Park at APS DFD 2026"
+        >
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- SEPTEMBER 2026 -->
+      <!-- ====================================================== -->
+
+      <article class="news-item">
+
+        <div class="news-content">
+
+          <h2>September 2026</h2>
+
+          <p>
+            I uploaded a movie of “Aggregate Dislodgement and Fragmentation” on YouTube.
+
+            <a
+              href="https://youtu.be/NffZWU3ynrU?si=vMZIilUE8ECxPVfQ"
+              target="_blank"
+              rel="noopener noreferrer">
+              Check it out!
+            </a>
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- JULY 2026 -->
+      <!-- ====================================================== -->
+
+      <article class="news-item has-right-image">
+
+        <div class="news-content">
+
+          <h2>July 2026</h2>
+
+          <p>
+            Our manuscript, “Impact of viscoelastic polymer solution droplets on a granular bed,”
+            has been accepted and published. This paper was also featured on the Front Cover!
+          </p>
+
+        </div>
+
+
+        <img
+          class="news-right-image"
+          src="../images/news/2026JulySoftMatterCover.png"
+          alt="Soft Matter Front Cover"
+        >
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- JUNE 2026 -->
+      <!-- ====================================================== -->
+
+      <article class="news-item">
+
+        <div class="news-content">
+
           <h2>June 2026</h2>
-          <p>Our manuscript, “Axial Forces in Capillary Liquid Bridges of Polymer Solutions,” has been accepted and published.</p>
+
+          <p>
+            Our manuscript, “Axial Forces in Capillary Liquid Bridges of Polymer Solutions,” has been accepted and published.
+          </p>
+
         </div>
-      </article>  
-      
-      <article class="news-item">
-        <div class="news-content">
-          <h2>May 2026</h2>
-          <p>Our manuscript, “Impact of viscoelastic polymer solution droplets on a granular bed,” has been submitted.</p>
-        </div>
-      </article>   
-      
-      <!-- [경우 1] 오른쪽에 사진을 넣고 싶을 때 -->
-      <!-- class에 'has-right-image'를 추가하고, 내부 맨 아래에 <img> 태그를 넣습니다. -->
-      <article class="news-item has-right-image">
-        <div class="news-content">
-          <h2>May 2026</h2>
-          <p>Jooyeon had a talk in "2026 CEAFM-Burgers-GWU Research Symposium" at Johns Hopkins University.</p>
-        </div>
-        <img class="news-right-image" src="../images/news/2026MayJHUtalk.png" alt="Symposium Talk">
-      </article>
-      
-      <!-- [경우 2] 사진 없이 글자만 넣고 싶을 때 (안넣을 때는 그냥 배경이 보임) -->
-      <!-- 기존 코드 그대로 작성하시면 됩니다. -->
-      <article class="news-item">
-        <div class="news-content">
-          <h2>April 2026</h2>
-          <p>Our manuscript, “Axial Forces in Capillary Liquid Bridges of Polymer Solutions,” has been submitted.</p>
-        </div>
+
       </article>
 
+
+
+      <!-- ====================================================== -->
+      <!-- MAY 2026 -->
+      <!-- ====================================================== -->
+
       <article class="news-item">
+
         <div class="news-content">
-          <h2>April 2026</h2>
-          <p>Started building my academic research homepage.</p>
+
+          <h2>May 2026</h2>
+
+          <p>
+            Our manuscript, “Impact of viscoelastic polymer solution droplets on a granular bed,” has been submitted.
+          </p>
+
         </div>
+
       </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- MAY 2026: JHU TALK -->
+      <!-- ====================================================== -->
+
+      <article class="news-item has-right-image">
+
+        <div class="news-content">
+
+          <h2>May 2026</h2>
+
+          <p>
+            Jooyeon had a talk in "2026 CEAFM-Burgers-GWU Research Symposium" at Johns Hopkins University.
+          </p>
+
+        </div>
+
+
+        <img
+          class="news-right-image"
+          src="../images/news/2026MayJHUtalk.png"
+          alt="Symposium Talk"
+        >
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- APRIL 2026 -->
+      <!-- ====================================================== -->
+
+      <article class="news-item">
+
+        <div class="news-content">
+
+          <h2>April 2026</h2>
+
+          <p>
+            Our manuscript, “Axial Forces in Capillary Liquid Bridges of Polymer Solutions,” has been submitted.
+          </p>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="news-item">
+
+        <div class="news-content">
+
+          <h2>April 2026</h2>
+
+          <p>
+            Started building my academic research homepage.
+          </p>
+
+        </div>
+
+      </article>
+
 
     </section>
 
+
   </main>
+
+
 
   <footer>
     <p>© 2026 Jooyeon Park</p>
   </footer>
 
+
+
+  <!-- Mouse wheel moves award gallery horizontally -->
+
+  <script>
+
+    document.querySelectorAll('.news-gallery').forEach(gallery => {
+
+      gallery.addEventListener('wheel', (event) => {
+
+        if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+
+          event.preventDefault();
+
+          gallery.scrollLeft += event.deltaY;
+
+        }
+
+      }, { passive: false });
+
+    });
+
+  </script>
+
+
 </body>
+
 </html>
