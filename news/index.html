@@ -23,6 +23,7 @@
   <style>
 
     /* YouTube video */
+
     .youtube-video {
       width: 100%;
       max-width: 700px;
@@ -31,6 +32,7 @@
     }
 
     .youtube-video iframe {
+      display: block;
       width: 100%;
       height: 100%;
       border: 0;
@@ -39,6 +41,7 @@
 
 
     /* Horizontal image gallery */
+
     .news-gallery {
       display: flex;
       gap: 16px;
@@ -68,7 +71,8 @@
     }
 
 
-    /* Mobile */
+    /* Mobile gallery */
+
     @media (max-width: 700px) {
 
       .news-gallery img {
@@ -130,7 +134,7 @@
             <strong>Milton van Dyke Award</strong> at the
             <strong>Gallery of Fluid Motion, APS DFD 2026</strong>.
             The video visualizes the dislodging and fragmentation dynamics of wet granular aggregates under turbulent jet flows.
-            </p>
+          </p>
 
 
           <!-- YouTube video -->
@@ -138,7 +142,7 @@
           <div class="youtube-video">
 
             <iframe
-              src="https://www.youtube.com/watch?v=0qE3IOlpmqY"
+              src="https://www.youtube.com/embed/0qE3IOlpmqY"
               title="Held by Water, Broken by Wind"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen>
@@ -158,12 +162,12 @@
 
             <img
               src="../images/news/image2_gfm.jpg"
-              alt="ceremony1"
+              alt="Gallery of Fluid Motion award ceremony"
             >
 
             <img
               src="../images/news/image3_gfm.jpg"
-              alt="ceremony2"
+              alt="APS DFD 2026 award ceremony"
             >
 
           </div>
