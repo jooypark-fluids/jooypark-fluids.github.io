@@ -36,7 +36,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Navigation */
+/* ====================================================== */
 
 .navbar {
   max-width: 1320px;
@@ -70,7 +72,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Page */
+/* ====================================================== */
 
 .page {
   max-width: 1320px;
@@ -79,7 +83,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Intro section */
+/* ====================================================== */
 
 .intro-section {
   padding: 10px 0 58px;
@@ -128,7 +134,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Contact / collaboration block */
+/* ====================================================== */
 
 .connect-section {
   display: grid;
@@ -227,7 +235,7 @@ img {
 }
 
 
-/* CV link below contact icons */
+/* CV link */
 
 .cv-line {
   margin: 22px 0 0;
@@ -248,7 +256,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Sections */
+/* ====================================================== */
 
 .section {
   margin-top: 74px;
@@ -276,7 +286,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Research Preview */
+/* ====================================================== */
 
 .research-grid {
   display: grid;
@@ -316,7 +328,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Featured Publication */
+/* ====================================================== */
 
 .publication-box {
   padding: 24px 0;
@@ -334,7 +348,9 @@ img {
 }
 
 
-/* News Preview */
+/* ====================================================== */
+/* Home News Preview */
+/* ====================================================== */
 
 .news-preview {
   padding: 24px 0;
@@ -354,7 +370,9 @@ img {
 }
 
 
+/* ====================================================== */
 /* Footer */
+/* ====================================================== */
 
 footer {
   border-top: 1px solid var(--border);
@@ -365,7 +383,9 @@ footer {
 }
 
 
-/* Mobile */
+/* ====================================================== */
+/* General Mobile */
+/* ====================================================== */
 
 @media (max-width: 900px) {
 
@@ -507,7 +527,9 @@ footer {
 }
 
 
+/* ====================================================== */
 /* Research Page */
+/* ====================================================== */
 
 .research-hero {
   padding: 10px 0 18px;
@@ -537,7 +559,7 @@ footer {
 }
 
 
-/* Desktop layout */
+/* Desktop research layout */
 
 .research-item-grid {
   display: grid;
@@ -549,9 +571,6 @@ footer {
 .research-item-grid.reverse {
   grid-template-columns: 1fr 1fr;
 }
-
-
-/* First item uses one-column image/text layout on desktop */
 
 .research-item-grid.stacked {
   grid-template-columns: 1fr;
@@ -600,9 +619,6 @@ footer {
   margin-top: 22px;
 }
 
-
-/* First research item */
-
 .research-transport .research-text {
   display: block;
   width: 100%;
@@ -615,7 +631,7 @@ footer {
 }
 
 
-/* Research Page - Mobile */
+/* Research mobile */
 
 @media (max-width: 900px) {
 
@@ -700,7 +716,9 @@ footer {
 }
 
 
+/* ====================================================== */
 /* Publications Page */
+/* ====================================================== */
 
 .publication-page {
   max-width: 1320px;
@@ -941,7 +959,9 @@ footer {
 }
 
 
+/* ====================================================== */
 /* Experimental Skills Page */
+/* ====================================================== */
 
 .skill-page {
   max-width: 1320px;
@@ -1007,7 +1027,9 @@ footer {
 }
 
 
+/* ====================================================== */
 /* Photos Page */
+/* ====================================================== */
 
 .photos-page {
   max-width: 1320px;
@@ -1118,14 +1140,9 @@ footer {
   gap: 34px;
 }
 
-
-/* Default news item */
-
 .news-item {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
-  align-items: center;
+  display: block;
+  width: 100%;
   padding: 0 0 28px;
   border-bottom: 1px solid var(--border);
 }
@@ -1134,6 +1151,10 @@ footer {
   border-bottom: none;
 }
 
+.news-content {
+  display: block;
+  width: 100%;
+}
 
 .news-content h2 {
   margin: 0 0 8px;
@@ -1145,6 +1166,7 @@ footer {
 }
 
 .news-content p {
+  width: 100%;
   margin: 0;
   font-size: 23px;
   line-height: 1.55;
@@ -1153,50 +1175,43 @@ footer {
 
 
 /* ------------------------------------------------------ */
-/* Single image below News text */
-/* APS DFD, Johns Hopkins, Soft Matter etc. */
+/* Normal single News image */
+/* Exactly 50% of the text/content width */
 /* ------------------------------------------------------ */
 
 .news-single-image {
-  display: block;
-
-  width: 50%;
-  max-width: 600px;
-  height: auto;
-
-  margin: 22px auto 0;
-
+  display: block !important;
+  width: 50% !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 24px auto 0 !important;
   object-fit: contain;
   border-radius: 4px;
 }
 
 
 /* ------------------------------------------------------ */
-/* YouTube video */
+/* YouTube */
 /* ------------------------------------------------------ */
 
 .youtube-video {
-  width: 100%;
-  max-width: 700px;
-
+  width: 70%;
+  max-width: 850px;
   aspect-ratio: 16 / 9;
-
-  margin: 22px auto 0;
+  margin: 24px auto 0;
 }
 
 .youtube-video iframe {
   display: block;
-
   width: 100%;
   height: 100%;
-
   border: 0;
   border-radius: 8px;
 }
 
 
 /* ------------------------------------------------------ */
-/* Horizontal award image gallery */
+/* GFM horizontal photo gallery */
 /* ------------------------------------------------------ */
 
 .news-gallery {
@@ -1208,7 +1223,7 @@ footer {
   overflow-x: auto;
   overflow-y: hidden;
 
-  margin-top: 22px;
+  margin-top: 24px;
   padding-bottom: 8px;
 
   scroll-behavior: smooth;
@@ -1219,9 +1234,9 @@ footer {
 
 .news-gallery img {
   flex: 0 0 70%;
-
-  max-width: 600px;
-  height: 320px;
+  width: auto;
+  max-width: 700px;
+  height: 360px;
 
   object-fit: cover;
 
@@ -1231,14 +1246,11 @@ footer {
 }
 
 
-/* News Page - Mobile */
+/* ------------------------------------------------------ */
+/* News mobile */
+/* ------------------------------------------------------ */
 
 @media (max-width: 768px) {
-
-  .news-item {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
 
   .news-content h2 {
     font-size: 21px;
@@ -1249,8 +1261,8 @@ footer {
   }
 
   .news-single-image {
-    width: 80%;
-    max-width: none;
+    width: 50% !important;
+    max-width: none !important;
   }
 
   .youtube-video {
@@ -1260,12 +1272,15 @@ footer {
 
   .news-gallery img {
     flex: 0 0 85%;
+    max-width: none;
     height: 250px;
   }
 }
 
 
-/* ---------- Navbar site symbol ---------- */
+/* ====================================================== */
+/* Navbar site symbol */
+/* ====================================================== */
 
 .site-logo {
   position: absolute;
@@ -1290,7 +1305,7 @@ footer {
 }
 
 
-/* ---------- Mobile navbar symbol control ---------- */
+/* Mobile navbar symbol */
 
 @media (max-width: 900px) {
 
