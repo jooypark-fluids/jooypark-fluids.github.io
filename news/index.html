@@ -19,76 +19,10 @@
 
   <link rel="icon" type="image/png" href="../favicon.png?v=2">
   <link rel="stylesheet" href="../style.css" />
-
-  <style>
-
-    /* YouTube video */
-
-    .youtube-video {
-      width: 100%;
-      max-width: 700px;
-      aspect-ratio: 16 / 9;
-      margin-top: 20px;
-    }
-
-    .youtube-video iframe {
-      display: block;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      border-radius: 8px;
-    }
-
-
-    /* Horizontal image gallery */
-
-    .news-gallery {
-      display: flex;
-      gap: 16px;
-
-      width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-
-      margin-top: 20px;
-      padding-bottom: 8px;
-
-      scroll-behavior: smooth;
-      scroll-snap-type: x mandatory;
-
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .news-gallery img {
-      flex: 0 0 70%;
-      max-width: 600px;
-      height: 320px;
-
-      object-fit: cover;
-      border-radius: 8px;
-
-      scroll-snap-align: start;
-    }
-
-
-    /* Mobile gallery */
-
-    @media (max-width: 700px) {
-
-      .news-gallery img {
-        flex: 0 0 85%;
-        height: 250px;
-      }
-
-    }
-
-  </style>
-
 </head>
 
 
 <body>
-
 
   <nav class="navbar">
 
@@ -106,14 +40,11 @@
   </nav>
 
 
-
   <main class="page news-page">
-
 
     <section class="intro-section research-hero">
       <h1 class="page-title">News</h1>
     </section>
-
 
 
     <section class="news-list" aria-label="News updates">
@@ -131,7 +62,7 @@
 
           <p>
             Our video, <strong>“Held by Water, Broken by Wind,”</strong> received the
-            <strong>Milton van Dyke Award</strong> at the
+            <strong>Milton van Dyke Video Award</strong> at the
             <strong>Gallery of Fluid Motion, APS DFD 2026</strong>.
             The video visualizes the dislodging and fragmentation dynamics of wet granular aggregates under turbulent jet flows.
           </p>
@@ -177,12 +108,11 @@
       </article>
 
 
-
       <!-- ====================================================== -->
       <!-- NOVEMBER 2026: APS DFD PRESENTATION -->
       <!-- ====================================================== -->
 
-      <article class="news-item has-right-image">
+      <article class="news-item">
 
         <div class="news-content">
 
@@ -193,17 +123,15 @@
             She also enjoyed networking with fellow researchers and served as the session chair for the “Granular Flows: General” session.
           </p>
 
+          <img
+            class="news-single-image"
+            src="../images/news/aps_present.png"
+            alt="Jooyeon Park at APS DFD 2026"
+          >
+
         </div>
 
-
-        <img
-          class="news-right-image"
-          src="../images/news/aps_present.png"
-          alt="Jooyeon Park at APS DFD 2026"
-        >
-
       </article>
-
 
 
       <!-- ====================================================== -->
@@ -233,12 +161,11 @@
       </article>
 
 
-
       <!-- ====================================================== -->
       <!-- JULY 2026 -->
       <!-- ====================================================== -->
 
-      <article class="news-item has-right-image">
+      <article class="news-item">
 
         <div class="news-content">
 
@@ -249,17 +176,15 @@
             has been accepted and published. This paper was also featured on the Front Cover!
           </p>
 
+          <img
+            class="news-single-image"
+            src="../images/news/2026JulySoftMatterCover.png"
+            alt="Soft Matter Front Cover"
+          >
+
         </div>
 
-
-        <img
-          class="news-right-image"
-          src="../images/news/2026JulySoftMatterCover.png"
-          alt="Soft Matter Front Cover"
-        >
-
       </article>
-
 
 
       <!-- ====================================================== -->
@@ -281,7 +206,6 @@
       </article>
 
 
-
       <!-- ====================================================== -->
       <!-- MAY 2026 -->
       <!-- ====================================================== -->
@@ -301,12 +225,11 @@
       </article>
 
 
-
       <!-- ====================================================== -->
       <!-- MAY 2026: JHU TALK -->
       <!-- ====================================================== -->
 
-      <article class="news-item has-right-image">
+      <article class="news-item">
 
         <div class="news-content">
 
@@ -316,17 +239,15 @@
             Jooyeon had a talk in "2026 CEAFM-Burgers-GWU Research Symposium" at Johns Hopkins University.
           </p>
 
+          <img
+            class="news-single-image"
+            src="../images/news/2026MayJHUtalk.png"
+            alt="Symposium Talk"
+          >
+
         </div>
 
-
-        <img
-          class="news-right-image"
-          src="../images/news/2026MayJHUtalk.png"
-          alt="Symposium Talk"
-        >
-
       </article>
-
 
 
       <!-- ====================================================== -->
@@ -348,7 +269,6 @@
       </article>
 
 
-
       <article class="news-item">
 
         <div class="news-content">
@@ -366,15 +286,12 @@
 
     </section>
 
-
   </main>
-
 
 
   <footer>
     <p>© 2026 Jooyeon Park</p>
   </footer>
-
 
 
   <!-- Mouse wheel moves award gallery horizontally -->
@@ -388,7 +305,6 @@
         if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
 
           event.preventDefault();
-
           gallery.scrollLeft += event.deltaY;
 
         }
